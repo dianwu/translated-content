@@ -122,7 +122,7 @@ window.addEventListener("message", receiveMessage, false);
 
 分派事件的 origin 属性的值不受调用窗口中 document.domain 的当前值的影响。
 
-仅对于 IDN 主机名，origin 属性的值不是始终为 Unicode 或 punycode; 在使用此属性时，如果你期望来自 IDN 网站的消息，则最大程度地兼容性检查 IDN 和 punycode 值。这个值最终将始终是 IDN，但现在你应该同时处理 IDN 和 punycode 表单。
+仅对于 IDN 主机名，origin 属性的值不是始终为 Unicode 或 punycode， 在使用此属性时，如果你期望来自 IDN 网站的消息，则最大程度地兼容性检查 IDN 和 punycode 值。这个值最终将始终是 IDN，但现在你应该同时处理 IDN 和 punycode 表单。
 
 当发送窗口包含 `javascript:` 或 `data:` URL 时，origin 属性的值是加载 URL 的脚本的
 
